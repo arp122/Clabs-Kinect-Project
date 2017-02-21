@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{0CC90AE4-EE82-6A66-8C52-49CCBBA62C94}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GestureScripts\ConstDef.cs" />
+     <Compile Include="Assets\GestureScripts\FSM.cs" />
+     <Compile Include="Assets\GestureScripts\GestureDetector.cs" />
+     <Compile Include="Assets\GestureScripts\GestureManager.cs" />
+     <Compile Include="Assets\GestureScripts\JointData.cs" />
+     <Compile Include="Assets\GestureScripts\JointMatcher.cs" />
+     <Compile Include="Assets\GestureScripts\JointMatcherR.cs" />
+     <Compile Include="Assets\GestureScripts\PostureDetector.cs" />
+     <Compile Include="Assets\GestureScripts\PostureFeature.cs" />
+     <Compile Include="Assets\GestureScripts\SensorSkeletonReader.cs" />
+     <Compile Include="Assets\GestureScripts\SkeletonAvatarController.cs" />
+     <Compile Include="Assets\GestureScripts\SkeletonRecorder.cs" />
+     <Compile Include="Assets\GestureScripts\TemplateTrainer.cs" />
+     <Compile Include="Assets\GestureScripts\UIInfoObserver.cs" />
+     <Compile Include="Assets\GestureScripts\UIKeyFrameMarker.cs" />
+     <Compile Include="Assets\GestureScripts\UISkeletonPlayer.cs" />
+     <Compile Include="Assets\GestureScripts\UISkeletonRecorder.cs" />
+     <Compile Include="Assets\GestureScripts\UITemplateTrainer.cs" />
+     <Compile Include="Assets\GestureScripts\UITrainManager.cs" />
+     <Compile Include="Assets\GestureScripts\Utilities.cs" />
+     <Compile Include="Assets\GestureScripts\VirtualKey.cs" />
+     <Compile Include="Assets\OpenNI\Documentation\Additional documentation sources\OpenNIMainPage.cs" />
+     <Compile Include="Assets\OpenNI\Documentation\Additional documentation sources\OpenNIOverviewPages.cs" />
+     <Compile Include="Assets\OpenNI\Documentation\Additional documentation sources\OpenNIPages.cs" />
+     <Compile Include="Assets\OpenNI\Documentation\Additional documentation sources\OpenNISamplesPages.cs" />
+     <Compile Include="Assets\OpenNI\Documentation\Additional documentation sources\OpenNITutorials.cs" />
+     <Compile Include="Assets\OpenNI\Documentation\Additional documentation sources\OpenNIUtilityPages.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\NIEventLogger.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NICheckVersion.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIContext.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIConvertCoordinates.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIImage.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIOpenNICheckVersion.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIUserAndSkeleton.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\WrapperBaseObjects\NIWrapperContextDependant.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\WrapperBaseObjects\NIWrapperObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNISettingsManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\Queries\NIQuery.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\Queries\NIQueryDescription.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Skeleton base objects\NISkeletonController.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Base objects\NIPlayerCandidateObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Base objects\NIPlayerManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Base objects\NISelectedPlayer.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Selectors\NIPlayerCOMCandidateObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Selectors\NIPlayerManagerCOMSelection.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\NISkeletonControllerLineDebugger.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\NISkeletonControllerLineRenderer.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIDepthmapViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIImagemapViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIMapViewerBaseUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIRadarViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIUsermapViewerUtility.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\DepthWrapper.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\DeviceOrEmulator.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectInterop.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectSensor.cs" />
+     <Compile Include="Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\ExitOnEscape.cs" />
+     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\HSBColor.cs" />
+     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\MenuController.cs" />
+     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\RandomHSV.cs" />
+     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\animatedTexture.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigFader.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigFollowHandPoint.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigPushDetector.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigSteadyDetector.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigSwipeDetector.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigWaveDetector.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigHandRaiseDetector.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigHandSessionDetector.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigMapJointToSession.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigSkeleton.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageAllUsers.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageSingleSession.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageSingleUser.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageSplitScreen.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigDepthViewer.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigDepthmapToParticles.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigImageViewer.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigUserViewer.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigUsersRadar.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\Zig.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\_Internal\Matrix3.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\_Internal\TimedBuffer.cs" />
+     <Compile Include="Assets\ZigFu\Scripts\_Internal\kinectSpecific.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
+     <None Include="Assets\OpenNI\Documentation\SampleXML.xml" />
+     <None Include="Assets\OpenNI\Documentation\ExampleRecord.xml" />
+ <Reference Include="OpenNI.Net">
+ <HintPath>Assets\ZigFu\Scripts\_Internal\OpenNI.Net.dll</HintPath>
+ </Reference>
+ <Reference Include="ZDK">
+ <HintPath>Assets\ZigFu\Scripts\_Internal\ZDK.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{BBC0A7C2-3582-8171-61EF-89D5BD579B5E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{FAF7D240-7EFC-B8CB-CB09-B08E660C438F}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
